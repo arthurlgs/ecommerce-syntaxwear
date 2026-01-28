@@ -1,1 +1,4 @@
 /* Base styles */
+body{
+    font-family: var(--fonte-principal);
+}
