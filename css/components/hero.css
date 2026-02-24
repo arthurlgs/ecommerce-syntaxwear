@@ -1,6 +1,6 @@
 /* Hero section styles */
 .hero-section {
-    background: url(../../images/banners/93f6df06-b574-4d35-aa24-5a3cba776bae3.jpg) no-repeat center;
+    background: url(../../images/banners/Hero.jpg) no-repeat center;
     background-size: cover;
     border-radius: 15px;
     height: 500px;
@@ -39,4 +39,32 @@
 .hero-content .hero-subtitle {
     font-size: 1.25rem;
     font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .hero-section{
+        height: 660px;
+        background-image: url(../../images/banners/hero-mobile.jpg);
+    }
+
+    .hero-overlay {
+        padding: 0;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-content, .hero-subtitle{
+        font-size: 1.25rem;
+    }
+
+    .hero-content {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
 }

@@ -45,7 +45,6 @@
         "highlight highlight model sneaker-color"
         "sneaker-white sneaker-white model sneaker-silver";
     gap: 30px;
-    margin-top: 40px;
 }
 
 .highlight-content {
@@ -60,16 +59,51 @@
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 10px;
-    color: #EDEDED;
 }
 .card-subtitle{
     color: #EDEDED;
-    font-size 1.5rem
+    font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
 .cta-group {
     display: flex;
-    gap: 12px;
+    gap: 10px;
 }
+
+@media (max-width: 768px) {
+
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "highlight highlight"
+        "sneaker-white sneaker-white"
+        "model sneaker-color"
+        "model sneaker-silver"
+        "sneaker-purple sneaker-purple";
+        max-width: 100%;
+        gap: .625rem;
+    }
+
+    .highlight {
+        min-height: 500px;
+    }
+
+    .model {
+        min-height: 370px;
+    }
+
+    .sneaker-white, .sneaker-purple {
+        min-height: 190px;
+    }
+}
+
+/* Ensure cards fill their grid cells and background covers */
+/* .card{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+} */
