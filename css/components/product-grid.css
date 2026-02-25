@@ -1,4 +1,3 @@
-/* Product gallery styles */
 .card {
     background-position: center;
     background-size: cover;
@@ -99,11 +98,3 @@
         min-height: 190px;
     }
 }
-
-/* Ensure cards fill their grid cells and background covers */
-/* .card{
-    width: 100%;
-    height: 100%;
-    display: block;
-    overflow: hidden;
-} */
